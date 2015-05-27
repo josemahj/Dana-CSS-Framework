@@ -1,0 +1,162 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+/*------------------------------------*\
+    $STYLE
+\*------------------------------------*/
+/**
+ * Aquí incluímos todos los módulos (archivos .less) que se van
+ * a compilar en el CSS definitivo
+ */
+/**
+* Librerías
+**/
+/*------------------------------------*\
+    $SETTINGS
+\*------------------------------------*/
+/*------------------------------------*\
+    $BREAKPOINTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+    $FUNCIONES
+\*------------------------------------*/
+/*------------------------------------*\
+    $PLACEHOLDERS
+\*------------------------------------*/
+/**
+* The ghost, nudged to maintain perfect centering
+*/
+/**
+* Escondemos el texto solo VISUALMENTE (alternativa al modo bootstrap .hide-text)
+*/
+/**
+* Escondemos el texto de VISUALMENTE y SCREENREADERS
+*/
+/**
+* Escondemos pero mantenemos layout.
+*/
+/**
+* Bases
+**/
+/*------------------------------------*\
+    $CONTENIDO
+\*------------------------------------*/
+/**
+ * Contenido..................... Esto que lees
+
+ * Settings...................... Configuramos todas las variables del framework
+
+ * Mixins........................ Mixins de LESS
+
+ * Funciones..................... Clases de ayuda
+
+ * Flex.......................... Documentacion y mixins para usar flexbox
+
+ * Placeholders.................. Manejo de textos del sitio
+
+ * Formularios................... Estilos de todos los elementos de formularios y sus variantes
+
+ * Links......................... Formas y estilos de los links
+
+ * Tablas........................ Estilos de las tablas
+
+ * Tipografía.................... Encabezados, small, párrafos, listas, etc... Fuentes que vamos a importar
+
+ * Elementos..................... Elementos varios como Imagen, HR, etc...
+
+ * Navegación.................... Una navegación, por si quieres usar esta y no la tuya propia
+
+ * Sitio......................... Aquí escribes tus estilos para la web se vea como tú quieres ;)
+
+ * Botones....................... Estilos de Botones, skins y variantes
+
+ * Paginación.................... Estilos básicos para las paginaciones
+
+ * Fonticon...................... Definicion de fuente para iconos alternativa a bootstrap
+
+ * Texturas...................... Estilos para la guía de patrones
+ */
+/**
+* Selectores de elemento
+**/
+/*------------------------------------*\
+    $ELEMENTOS-FIGURE
+\*------------------------------------*/
+/*------------------------------------*\
+    $FORMULARIOS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMÁGENES
+\*------------------------------------*/
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+/*------------------------------------*\
+    $TIPOGRAFÍA
+\*------------------------------------*/
+/* Google Fonts */
+/*------------------------------------*\
+    $TABLAS
+\*------------------------------------*/
+/**
+* Layout del sitio
+**/
+/*------------------------------------*\
+    $SITIO
+\*------------------------------------*/
+/**
+* A partir de aquí es donde escribimos los estilos de posicionamiento
+* y detalles que forman la web. Disfruta!
+*/
+/*------------------------------------*\
+    $NAVEGACIÓN
+\*------------------------------------*/
+/**
+* Abstracciones y objetos
+**/
+/*------------------------------------*\
+    $BOTONES
+\*------------------------------------*/
+/*
+ * Definimos los botones y sus variantes
+ */
+/**
+ * .btn es la clase principal para definir un botón
+ */
+/*------------------------------------*\
+    $BOTONES-VARIANTES
+\*------------------------------------*/
+/**
+ * Variantes de los botones: color para dar sensaciones.
+ *
+ */
+/*------------------------------------*\
+    $FUENTES
+\*------------------------------------*/
+/* Estilos Font awesome */
+/*------------------------------------*\
+    $grid
+\*------------------------------------*/
+/*------------------------------------*\
+    $PAGINACION
+\*------------------------------------*/
+/*------------------------------------*\
+    $TEXTURAS
+\*------------------------------------*/
+/*------------------------------------*\
+    COLORS
+\*------------------------------------*/
+/* Colores sociales -> son los colores corporativos
+ * si hace falta, añadir más
+ */
+::-moz-selection {
+  background-color: #ffffff;
+  color: #337ab7;
+  text-shadow: none;
+}
+::selection {
+  background-color: #ffffff;
+  color: #337ab7;
+  text-shadow: none;
+}

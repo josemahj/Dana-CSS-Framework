@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    $PLACEHOLDERS
+\*------------------------------------*/
+
+/**
+* The ghost, nudged to maintain perfect centering
+*/
+.vcenter() {
+    &:before {
+        content        : '';
+        display        : inline-block;
+        height         : 100%;
+        vertical-align : middle;
+    }
+}
+
+/**
+* Escondemos el texto solo VISUALMENTE (alternativa al modo bootstrap .hide-text)
+*/
+.text-indent() {
+    text-indent : 500%;
+    white-space : nowrap;
+    overflow    : hidden;
+    &:before,
+    &:after {
+        text-indent: 0;
+    }
+}
+
+/**
+* Escondemos el texto de VISUALMENTE y SCREENREADERS
+*/
+.hidden() {
+    display    : none !important;
+    visibility : hidden;
+}
+
+/**
+* Escondemos pero mantenemos layout.
+*/
+.invisible() {
+    visibility : hidden;
+}

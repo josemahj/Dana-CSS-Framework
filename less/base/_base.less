@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// Este archivo contiene estilos muy básicas.
+// -----------------------------------------------------------------------------
+
+html {
+    font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+
+/**
+ * Hace que todos los elementos del DOM hereden el box-sizing del padre, es
+ * probablemente la mejor práctica recomendada.
+ * Info: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+
+html {
+    box-sizing : border-box;
+}
+
+*, *::before, *::after {
+    box-sizing : inherit;
+}
+
+/**
+ * Estilos básicos para enlaces
+ */
+a {
+    color           : @brand-primary;
+    text-decoration : none;
+    &:hover,
+    &:active,
+    &:focus {
+        color           : @brand-primary;
+        text-decoration : underline;
+    }
+}
+
+
+/*
+ * Color de texto seleccionado
+ */
+::-moz-selection {
+    background-color : lighten(@brand-primary, 65%);
+    color            : @brand-primary;
+    text-shadow      : none;
+}
+
+::selection {
+    text       : @brand-primary;
+    background : lighten(@brand-primary, 65%);;
+}
+
+
+/**
+ * scrollbars
+ */
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: @gray-dark;
+}
+
+::-webkit-scrollbar-track {
+    background: @gray-lighter;
+}
+
+body {
+    scrollbar-face-color:  @gray-dark;
+    scrollbar-track-color: @gray-lighter;
+}

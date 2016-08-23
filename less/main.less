@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/**
+ * Archivos .less que se van a compilar en el CSS definitivo. Este archivo sólo
+ * debe contener "@import"  y comentarios.
+ */
+
+/* ABSTRACTS
+   ========================================================================== */
+
+/**
+ * ABSTRACTS agrupa todas las herramientas LESS usadas a lo largo del proyecto.
+ * Cada función, variable y mixin global debe ir aquí.
+ * La regla de oro para esta carpeta es que no debe emitir una sola línea de CSS
+ * cuando se compila por sí solo.
+ */
+@import "abstracts/_variables";
+@import "abstracts/_functions";
+@import "abstracts/_mixins";
+@import "abstracts/_flex";
+
+
+/* VENDOR
+   ========================================================================== */
+
+/**
+ * VENDOR contiene todos los archivos CSS de las bibliotecas
+ * externas. Es una buena manera de decir "Esto no es de mío, no es mi
+ * código, no es mi responsabilidad".
+ *
+ * Si hay que sobreescribir una parte de terceros, la carpeta llamada
+ * "vendors-extensions/" incluirá los valores que se sobreescriben. Por ejemplo,
+ * "vendors-extensions/_bootstrap.less" es un archivo que contiene todas las
+ * variables LESS destinadas sobreescribir los valores por defecto de Bootstrap.
+ * Esto es para evitar la edición del proveedor propios archivos, que por lo
+ * general no es una buena idea .
+ */
+//@import "vendor/_normalize";
+@import "vendor/bootstrap/bootstrap";
+@import "vendor-extensions/_bootstrap";
+@import "vendor/font-awesome/font-awesome";
+@import "vendor/_animate";
+
+/* BASE
+   ========================================================================== */
+
+/**
+ * BASE contiene lo que podríamos llamar el código estándar para el proyecto.
+ * Es posible encontrar algunas reglas tipográficas, y la definición de algunos
+ * estilos estándar para los elementos HTML de uso común.
+ *
+ * 1. Archivo debug para comprobar posibles fallos de maquetación.
+ */
+@import "base/_reset";
+@import "base/_base";
+@import "base/_fonts";
+@import "base/_typography";
+@import "base/_helpers";
+@import "base/_animations";
+@import "base/_print";
+//@import "base/_debug"; /* [1] */
+
+
+/* LAYOUT
+   ========================================================================== */
+
+/**
+ * LAYOUT contiene lo que participa en la disposición de sitio. Esta carpeta
+ * puede tener hojas de estilo para las principales partes del sitio
+ * (encabezado, pie de página, navegación, barra lateral...), el grid o los
+ * formularios.
+ */
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_navigation";
+@import "layout/_sidebar";
+@import "layout/_forms";
+
+
+/* COMPONENTS
+   ========================================================================== */
+
+/**
+ * Para los pequeños componentes, existe la carpeta "components/". Mientras  que
+ * LAYOUT está más centrada en la estructura global, COMPONENTES se centra en
+ * los widgets. Contiene módulos específicos como un slider, un loader, un
+ * widget o cualquier cosa por el estilo . Por lo general hay una gran cantidad
+ * de archivos en COMPONENTS.
+ */
+@import "components/_buttons";
+@import "components/_checkbox";
+@import "components/_fonticon";
+@import "components/_images";
+@import "components/_inputs";
+@import "components/_radios";
+@import "components/_selects";
+@import "components/_tables";
+@import "components/_textarea";
+
+
+/* PAGES
+   ========================================================================== */
+
+/**
+ * Si hay estilos específicos de página, es mejor ponerlos en "pages/", en un
+ * archivo de nombre de la página. Por ejemplo , no es raro tener estilos muy
+ * específicos para la página de inicio de ahí la necesidad de un archivo
+ * "_home.less" en "pages/".
+ */
+@import "pages/_home";
+
+
+/* THEMES
+   ========================================================================== */
+
+/**
+ * En caso de disponer de diferentes temas entre la aplicación o sitio se
+ * tendrán en "themes/". Diferencias entre distintas plantillas para
+ * proyectos específicos.
+ * No tiene porque usarse en todos los proyectos.
+ */
+@import "themes/_default";

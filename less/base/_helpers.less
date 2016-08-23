@@ -1,0 +1,131 @@
+// -----------------------------------------------------------------------------
+// Este archivo contiene clases CSS de ayuda.
+// -----------------------------------------------------------------------------
+
+/**
+ * Limpia floats.
+ */
+
+.clearfix::after {
+    clear   : both;
+    content : '';
+    display : table;
+}
+
+/**
+ * Esconde texto mientras lo hace legible para screen readers
+ * 1. Necesario en navegadores WebKit debido a un bug;
+ *    Info: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+    overflow    : hidden;
+    padding     : 0; /* 1 */
+    text-indent : 101%;
+    white-space : nowrap;
+}
+
+/**
+ * Esconde un elemento visualmente, pero accesibe a screen readers
+ * Tomado descaradamente de HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+
+.visually-hidden {
+    border   : 0;
+    clip     : rect(0 0 0 0);
+    height   : 1px;
+    margin   : -1px;
+    overflow : hidden;
+    padding  : 0;
+    position : absolute;
+    width    : 1px;
+}
+
+/**
+ * Texto alineado responsivo
+ * Info: https://gist.github.com/ohryan/b9593841c024c033783d
+ */
+
+.text-xs-left {
+    text-align : left;
+}
+
+.text-xs-right {
+    text-align : right;
+}
+
+.text-xs-center {
+    text-align : center;
+}
+
+.text-xs-justify {
+    text-align : justify;
+}
+
+@media (min-width : @screen-sm-min) {
+    .text-sm-left {
+        text-align : left;
+    }
+
+    .text-sm-right {
+        text-align : right;
+    }
+
+    .text-sm-center {
+        text-align : center;
+    }
+
+    .text-sm-justify {
+        text-align : justify;
+    }
+}
+
+@media (min-width : @screen-md-min) {
+    .text-md-left {
+        text-align : left;
+    }
+
+    .text-md-right {
+        text-align : right;
+    }
+
+    .text-md-center {
+        text-align : center;
+    }
+
+    .text-md-justify {
+        text-align : justify;
+    }
+}
+
+@media (min-width : @screen-lg-min) {
+    .text-lg-left {
+        text-align : left;
+    }
+
+    .text-lg-right {
+        text-align : right;
+    }
+
+    .text-lg-center {
+        text-align : center;
+    }
+
+    .text-lg-justify {
+        text-align : justify;
+    }
+}
+
+/**
+ * Estilos adicionales de alertas:
+ * "http://twitter.github.com/bootstrap/components.html#alerts"
+ * "https://github.com/twitter/bootstrap/blob/master/less/alerts.less"
+ */
+
+/**
+ * texto en color blanco
+ */
+
+.text-white {
+    color: #fff;
+}

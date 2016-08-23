@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// Este archivo contiene todas las funciones Less.
+// -----------------------------------------------------------------------------
+
+/**
+ * Convierte px en el equivalente rem
+ */
+
+.font-size(@sizeValue) {
+    @remValue: @sizeValue;
+    @pxValue: (@sizeValue * 10);
+    font-size: ~"@{pxValue}px";
+    font-size: ~"@{remValue}rem";
+}

@@ -1,6 +1,7 @@
 ﻿# Dana-CSS-JS-Framework
 Framework para agilizar maquetación Frontend con LESS, aunque es valido para
-usar con Sass
+usar con Sass.
+
 Base para maquetar de manera organizada frontends con Bootstrap o si el.
 
 ====================================================================================================

@@ -5,6 +5,28 @@
  * debe contener "@import"  y comentarios.
  */
 
+ /* VENDOR
+    ========================================================================== */
+
+ /**
+  * VENDOR contiene todos los archivos CSS de las bibliotecas
+  * externas. Es una buena manera de decir "Esto no es de mío, no es mi
+  * código, no es mi responsabilidad".
+  *
+  * Si hay que sobreescribir una parte de terceros, la carpeta llamada
+  * "vendors-extensions/" incluirá los valores que se sobreescriben. Por ejemplo,
+  * "vendors-extensions/_bootstrap.less" es un archivo que contiene todas las
+  * variables LESS destinadas sobreescribir los valores por defecto de Bootstrap.
+  * Esto es para evitar la edición del proveedor propios archivos, que por lo
+  * general no es una buena idea .
+  */
+ //@import "vendor/_normalize";
+ @import "vendor/bootstrap/bootstrap";
+ @import "vendor-extensions/_bootstrap";
+ @import "vendor/font-awesome/font-awesome";
+ @import "vendor/_animate";
+
+
 /* ABSTRACTS
    ========================================================================== */
 
@@ -19,27 +41,6 @@
 @import "abstracts/_mixins";
 @import "abstracts/_flex";
 
-
-/* VENDOR
-   ========================================================================== */
-
-/**
- * VENDOR contiene todos los archivos CSS de las bibliotecas
- * externas. Es una buena manera de decir "Esto no es de mío, no es mi
- * código, no es mi responsabilidad".
- *
- * Si hay que sobreescribir una parte de terceros, la carpeta llamada
- * "vendors-extensions/" incluirá los valores que se sobreescriben. Por ejemplo,
- * "vendors-extensions/_bootstrap.less" es un archivo que contiene todas las
- * variables LESS destinadas sobreescribir los valores por defecto de Bootstrap.
- * Esto es para evitar la edición del proveedor propios archivos, que por lo
- * general no es una buena idea .
- */
-//@import "vendor/_normalize";
-@import "vendor/bootstrap/bootstrap";
-@import "vendor-extensions/_bootstrap";
-@import "vendor/font-awesome/font-awesome";
-@import "vendor/_animate";
 
 /* BASE
    ========================================================================== */

@@ -8,4 +8,4 @@ Base para maquetar de manera organizada frontends con Bootstrap o sin el.
 
 En el proceso de compilación se recomienda usar [cssnext](http://cssnext.io/)
 
-cssguidelin.es y sass-guidelin.es como referencias
+cssguidelin.es y sass-guidelin.es ha sido usados como referencias

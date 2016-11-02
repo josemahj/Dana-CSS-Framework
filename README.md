@@ -6,6 +6,6 @@ Base para maquetar de manera organizada frontends con Bootstrap o sin el.
 
 ====================================================================================================
 
-En el proceso de compilación se ha usado [Autoprefixer](https://github.com/postcss/autoprefixer)
+En el proceso de compilación se recomienda usar [cssnext](http://cssnext.io/)
 
 cssguidelin.es y sass-guidelin.es como referencias
